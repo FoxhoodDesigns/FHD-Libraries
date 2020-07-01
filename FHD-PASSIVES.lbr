@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -263,6 +263,20 @@ Cermet MIL-R-22097</description>
 <text x="-5.08" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="WE180-744770218">
+<smd name="P$1" x="0" y="6.22" dx="5.4" dy="5" layer="1"/>
+<smd name="P$2" x="0" y="-6.27" dx="5.4" dy="5" layer="1"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-5.08" x2="-5.08" y2="-6.35" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.08" y1="-6.35" x2="5.08" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-6.35" x2="6.35" y2="-5.08" width="0.127" layer="21" curve="90"/>
+<wire x1="6.35" y1="-5.08" x2="6.35" y2="5.08" width="0.127" layer="21"/>
+<wire x1="6.35" y1="5.08" x2="5.08" y2="6.35" width="0.127" layer="21" curve="90"/>
+<wire x1="5.08" y1="6.35" x2="-5.08" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="6.35" x2="-6.35" y2="5.08" width="0.127" layer="21" curve="90"/>
+<text x="3.81" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.81" y="-8.89" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LOGO">
@@ -368,6 +382,15 @@ Cermet MIL-R-22097</description>
 </gates>
 <devices>
 <device name="" package="SDR1806(BOURNS)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="180-WE" package="WE180-744770218">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
