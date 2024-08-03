@@ -1,3 +1,11 @@
+# !!!----------DEPRECATED----------!!!
+This Repository and the libraries within are no longer in use.
+The eventual shutdown of Eagle by Autodesk 2026 necessitated migration to KiCad. Which is superior to it anyway.
+Please go there for current up-to-date files. This repository will be deleted once migration is complete.
+
+# NEW REPOSITORY
+https://github.com/FoxhoodDesigns/FHD-KiCad-Libary
+
 # FHD-Libraries
 Set of Autodesk Eagle Libraries used in personal projects. contains assortment of stuff from IC to Vacuum Tube. The libraries are subject to grow as more components are encountered that i use for my projects.
 
